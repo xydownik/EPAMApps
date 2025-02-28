@@ -1,0 +1,15 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_blue"
+        android:title="Blue"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_green"
+        android:title="Green"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_violet"
+        android:title="Violet"
+        app:showAsAction="never" />
+</menu>
