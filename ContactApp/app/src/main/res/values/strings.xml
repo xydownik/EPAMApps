@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="contact_name">Имя контакта</string>
+</resources>
