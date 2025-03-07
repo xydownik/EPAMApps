@@ -4,49 +4,133 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <EditText
+        android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:gravity="end"
+        android:textSize="24sp"
+        android:focusable="false"
+        android:layout_marginBottom="16dp"/>
 
-        <EditText
-            android:id="@+id/display"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:inputType="none"
-            android:gravity="end"
-            android:textSize="24sp"
-            android:focusable="false"
-            android:layout_weight="1"/>
+    <!-- Ряд 1 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp">
+            <Button android:text="@string/_1" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp">
+            <Button android:text="@string/_2" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="160dp">
+            <Button android:text="@string/_3" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="240dp">
+            <Button android:text="@string/plus" style="@style/ButtonStyle" />
+        </FrameLayout>
+    </FrameLayout>
 
-        <GridLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:columnCount="4"
-            android:rowCount="4"
-            android:padding="16dp"
-            android:layout_weight="2">
+    <!-- Ряд 2 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp">
+            <Button android:text="@string/_4" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp">
+            <Button android:text="@string/_5" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="160dp">
+            <Button android:text="@string/_6" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="240dp">
+            <Button android:text="@string/minus" style="@style/ButtonStyle" />
+        </FrameLayout>
+    </FrameLayout>
 
-            <Button android:text="1" style="@style/ButtonStyle"/>
-            <Button android:text="2" style="@style/ButtonStyle"/>
-            <Button android:text="3" style="@style/ButtonStyle"/>
-            <Button android:text="+" style="@style/ButtonStyle"/>
+    <!-- Ряд 3 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp">
+            <Button android:text="@string/_7" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp">
+            <Button android:text="@string/_8" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="160dp">
+            <Button android:text="@string/_9" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="240dp">
+            <Button android:text="@string/multiple" style="@style/ButtonStyle" />
+        </FrameLayout>
+    </FrameLayout>
 
-            <Button android:text="4" style="@style/ButtonStyle"/>
-            <Button android:text="5" style="@style/ButtonStyle"/>
-            <Button android:text="6" style="@style/ButtonStyle"/>
-            <Button android:text="-" style="@style/ButtonStyle"/>
+    <!-- Ряд 4 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp">
+            <Button android:text="@string/_0" style="@style/ButtonStyle"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp">
+            <Button android:text="@string/c" style="@style/ButtonStyle"/>
+        </FrameLayout>
 
-            <Button android:text="7" style="@style/ButtonStyle"/>
-            <Button android:text="8" style="@style/ButtonStyle"/>
-            <Button android:text="9" style="@style/ButtonStyle"/>
-            <Button android:text="*" style="@style/ButtonStyle"/>
-
-            <Button android:text="0" style="@style/ButtonStyle"/>
-            <Button android:text="C" style="@style/ButtonStyle"/>
-            <Button android:text="=" style="@style/ButtonStyle"/>
-        </GridLayout>
-    </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="160dp">
+            <Button android:text="@string/equal" style="@style/ButtonStyle" />
+        </FrameLayout>
+    </FrameLayout>
 
 </FrameLayout>

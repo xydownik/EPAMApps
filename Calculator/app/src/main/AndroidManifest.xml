@@ -13,26 +13,12 @@
         android:theme="@style/Theme.Calculator"
         tools:targetApi="31">
         <activity
-            android:name=".ConstraintLayoutCalculator"
-            android:exported="false" />
+            android:name=".ConstraintLayoutCalculator"/>
         <activity
-            android:name=".LinearLayoutCalculator"
-            android:exported="false" />
+            android:name=".LinearLayoutCalculator" />
         <activity
-            android:name=".FrameLayoutCalculator"
-            android:exported="false" />
-        <activity
-            android:name=".CalculatorConstraintActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CalculatorLinearActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CalculatorFrameActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BaseCalculatorActivity"
-            android:exported="false" />
+            android:name=".FrameLayoutCalculator"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

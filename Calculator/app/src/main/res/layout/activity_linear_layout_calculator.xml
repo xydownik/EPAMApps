@@ -8,40 +8,59 @@
     <EditText
         android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:inputType="none"
         android:gravity="end"
         android:textSize="24sp"
-        android:focusable="false"
-        android:layout_weight="1"/>
+        android:focusable="false"/>
 
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:columnCount="4"
-        android:rowCount="4"
-        android:padding="16dp"
-        android:layout_weight="2">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <Button android:text="1" style="@style/ButtonStyle"/>
-        <Button android:text="2" style="@style/ButtonStyle"/>
-        <Button android:text="3" style="@style/ButtonStyle"/>
-        <Button android:text="+" style="@style/ButtonStyle"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button android:text="4" style="@style/ButtonStyle"/>
-        <Button android:text="5" style="@style/ButtonStyle"/>
-        <Button android:text="6" style="@style/ButtonStyle"/>
-        <Button android:text="-" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_1" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_2" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_3" style="@style/ButtonStyle"/>
+            <Button android:text="@string/plus" style="@style/ButtonStyle"/>
+        </LinearLayout>
 
-        <Button android:text="7" style="@style/ButtonStyle"/>
-        <Button android:text="8" style="@style/ButtonStyle"/>
-        <Button android:text="9" style="@style/ButtonStyle"/>
-        <Button android:text="*" style="@style/ButtonStyle"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <Button android:text="0" style="@style/ButtonStyle"/>
-        <Button android:text="C" style="@style/ButtonStyle"/>
-        <Button android:text="=" style="@style/ButtonStyle"/>
-    </GridLayout>
+            <Button android:text="@string/_4" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_5" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_6" style="@style/ButtonStyle"/>
+            <Button android:text="@string/minus" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:text="@string/_7" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_8" style="@style/ButtonStyle"/>
+            <Button android:text="@string/_9" style="@style/ButtonStyle"/>
+            <Button android:text="@string/multiple" style="@style/ButtonStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:text="@string/_0" style="@style/ButtonStyle"/>
+            <Button android:text="@string/c" style="@style/ButtonStyle"/>
+            <Button android:text="@string/equal" style="@style/ButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
