@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fibonacci Numbers</string>
+    <string name="result">Result:</string>
+    <string name="schedule_calculation">Schedule Calculation</string>
+    <string name="start">Start</string>
+    <string name="enter_number">Enter number</string>
+    <string name="fibonacci_number">FIBONACCI_NUMBER</string>
+    <string name="fibonacci">Fibonacci</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_no_valid_fibonacci_number_received">Error: No valid Fibonacci number received</string>
+    <string name="fibonaccireceiver">FibonacciReceiver</string>
+</resources>
