@@ -1,0 +1,24 @@
+<!-- Layout for each to-do row in edit screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/checkBoxItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextItem"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="ToDo Item" />
+
+    <ImageButton
+        android:id="@+id/buttonDeleteItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:contentDescription="Delete item" />
+</LinearLayout>

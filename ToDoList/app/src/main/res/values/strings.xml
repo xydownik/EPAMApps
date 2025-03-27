@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="unnamed_list">Unnamed List</string>
+    <string name="please_enter_a_list_name">Please enter a list name</string>
+    <string name="list_updated">List updated</string>
+    <string name="list_saved">List saved</string>
+</resources>
