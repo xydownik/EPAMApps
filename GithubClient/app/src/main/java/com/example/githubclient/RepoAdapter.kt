@@ -1,5 +1,6 @@
 package com.example.githubclient
 
+import android.annotation.SuppressLint
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,6 +13,7 @@ class RepoAdapter(val onClick: (Repo) -> Unit) :
 
     private val items = mutableListOf<Repo>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun submitList(newItems: List<Repo>) {
         items.clear()
         items.addAll(newItems)

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GithubClient</string>
+    <string name="no_description_message">No description message</string>
+    <string name="failed_to_load_details">Failed to load details</string>
 </resources>

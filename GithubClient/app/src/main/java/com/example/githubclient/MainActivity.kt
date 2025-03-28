@@ -8,21 +8,19 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.githubclient.databinding.ActivityMainBinding
-
+const val ORG = "ORG"
+const val REPO = "REPO"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val viewModel: RepoViewModel by viewModels()
     private val adapter = RepoAdapter {
         val intent = Intent(this, DetailsActivity::class.java).apply {
-            putExtra("ORG", it.owner.login)
-            putExtra("REPO", it.name)
+            putExtra(ORG, it.owner.login)
+            putExtra(REPO, it.name)
         }
-
-
         startActivity(intent)
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
