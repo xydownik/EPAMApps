@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="add_note">Add Note</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="note_text">Note text</string>
+    <string name="yyyy_mm_dd_hh_mm">yyyy-MM-dd HH:mm</string>
+    <string name="new_note">New Note</string>
+    <string name="note_title">Note Title</string>
+    <string name="_2024_04_09">2024-04-09</string>
+</resources>
