@@ -9,23 +9,15 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 class NoteAdapter(private val onClick: (Note) -> Unit) :
-    ListAdapter<Note, NoteAdapter.NoteViewHolder>(DIFF) {
+    ListAdapter<Note, NoteViewHolder>(DIFF) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_note, parent, false)
-        return NoteViewHolder(view)
+        return NoteViewHolder(onClick, view)
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         holder.bind(getItem(position))
-    }
-
-    inner class NoteViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bind(note: Note) {
-            itemView.findViewById<TextView>(R.id.noteTitle).text = note.name
-            itemView.findViewById<TextView>(R.id.noteDate).text = note.date
-            itemView.setOnClickListener { onClick(note) }
-        }
     }
 
     companion object {
