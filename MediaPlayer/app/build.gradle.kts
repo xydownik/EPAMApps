@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -49,9 +48,10 @@ dependencies {
     implementation (libs.androidx.appcompat)
     implementation (libs.material)
     implementation (libs.androidx.constraintlayout)
+    implementation(libs.androidx.fragment.ktx)
+
 // Lifecycle components for ViewModel
     implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    implementation (libs.androidx.lifecycle.runtime.ktx.v270)
 
     // Optional: for formatting time (if needed)
     implementation (libs.commons.lang3)
